@@ -9,6 +9,7 @@ while selection >= 0:
     print "======================\n"
 
     selection = int(raw_input("Please select your customer type: "))
+    a = selection
     try:
         if selection < 1 or selection > 3:
             selection = int(raw_input("Please select your customer type\n Enter a number between 1 and 3 "))
@@ -27,12 +28,12 @@ while selection >= 0:
         print "Please enter a number"
 
 
-    def returning():
-        a = selection
+    def new():
         if a == 1:
-            return "You are a returning customer"
+            return ("Hello, returning customer!")
         elif a == 2:
-            return "You are a new customer"
+            return ('Hello, New customer!')
         else:
-            return "Welcome"
-    print returning()
+            return ('Welcome')
+    print new()
+
